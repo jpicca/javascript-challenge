@@ -36,8 +36,18 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
+                        <label for="date">Enter a Date (optional)</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input type="radio" id="all" name="country" value="all" checked>
+                        <label for="all">All Countries</label>
+                        <input type="radio" id="us" name="country" value="us">
+                        <label for="us">US</label>
+                        <input type="radio" id="ca" name="country" value="ca">
+                        <label for="ca">Canada</label><br>
+                        <label for="states">state/province:</label>
+                        <select id="states" name="states" size="1"></select>
+                        <label for="cities">city (multiple allowed):</label>
+                        <select id="cities" name="cities" size="5" multiple></select>
                       </li>
                     </ul>
                   </div>
